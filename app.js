@@ -99,5 +99,5 @@ function renderList(list) {
 	})
 }
 
-renderList(tempData.data.movies);
+renderList(tempData.data.123);
 

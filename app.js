@@ -24,6 +24,21 @@ sortByNameBtn.addEventListener('click', sortByName);
 search.addEventListener('keyup', searchByName);
 filterByYearBtn.addEventListener('click', filterByYear);
 
+// my start
+let sortByRatingBtn = document.querySelector('.sortByRating');
+sortByRatingBtn.addEventListener('click', sortByRating);
+
+function sortByRating() {
+    listMovies.innerHTML = '';
+    let tempArray = tempData.data.movies;
+    tempArray.sort((a, b) => {
+        return a.rating > b.rating ? 1 : -1;
+    });
+    renderList(tempArray)
+}
+// my end
+
+
 function isTarget(event) {
 	if (event.target.className.indexOf('link-more') !== -1) {
 		let filmId = event.target.getAttribute('id');

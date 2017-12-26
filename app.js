@@ -101,7 +101,7 @@ function renderList(list) {
 	})
 }
 
-renderList(tempData.data.123);
+renderList(tempData.data.movies);
 
 };
 
